@@ -133,7 +133,7 @@ public class ChessMatch {
         }
 
         if (!(type.equals("B") && type.equals("N") && type.equals("R") && type.equals("Q"))){
-            throw new InvalidParameterException("Tipo inválido a promover");
+            return promoted;
         }
 
         Position pos = promoted.getChessPosition().toPosition();
